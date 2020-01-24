@@ -12,7 +12,7 @@ import {
 const Cardstyle = styled.nav`
 background: #6B8E23;
 color: white;
-padding: 1%;
+padding: 2%;
 display: flex;
 align-items: center;
 flex-wrap: wrap;

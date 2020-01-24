@@ -8,13 +8,18 @@ import Body from "./components/Body/Body";
 import "./App.css";
 
 const AppStyle = styled.div`
-  background-image: url('./sw-bg.jpg');
+  background-image: url("./sw-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   margin: 0 auto;
+  padding: 2%;
 `;
+
+// const BodyCon = styled.div`
+// margin: 0%;
+// `;
 
 const App = () => {
   const [starWarsChars, setStarWarsChars] = useState([]);
@@ -40,6 +45,7 @@ const App = () => {
       <Header />
       <Container>
         <Row>
+          {/* <BodyCon> */}
           {starWarsChars.map(starWarsChar => {
             return (
               <Body
@@ -52,6 +58,7 @@ const App = () => {
               />
             );
           })}
+          {/* </BodyCon> */}
         </Row>
       </Container>
     </AppStyle>
